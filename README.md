@@ -4,4 +4,4 @@ Learn how to leverage Python's amazing tools to scrape data from other websites.
 
 The end goal of this project is to scrape blogs to analyze trending keywords and phrases.
 
-by using Python 3.6, Requests, BeautifulSoup, Asyncio, Pandas, Numpy, and more!
+by using Python 3.6, Requests, BeautifulSoup ...
