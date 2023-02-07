@@ -1,6 +1,7 @@
 import time
 from bs4 import BeautifulSoup
 import requests
+
 html_file=requests.get('https://www.timesjobs.com/candidate/job-search.html?searchType=personalizedSearch&from=submit&txtKeywords=python+&txtLocation=')
 soup= BeautifulSoup(html_file.text,'lxml')
 job_list=soup.find_all('li',class_='clearfix job-bx wht-shd-bx')
@@ -29,7 +30,9 @@ n=int(input(">"))
 for i in range(n):
      s=input("skill that u are familiar with>")
      skils_list.append(s)
-def find_job():
+
+
+def find_jobs():
      job_desc_matched=[]
      print("searching for job opportunity \npending ...")
      for desc,skills in jobs.items():
@@ -55,7 +58,7 @@ def find_job():
 
 if __name__== '__main__':
      while True:
-          find_job()
+          find_jobs()
           time_wait = 10*60
           print(f'waiting {time_wait} minutes ... ')
           time.sleep(time_wait)
